@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-		background: rgb(244, 244, 244) !important;
+		background: rgb(244, 244, 244);
 }
 
 body, input, select, textarea {
@@ -44,6 +44,10 @@ body, input, select, textarea {
     
 .header-nav{
     margin-bottom: 0px;
+    /*position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;*/
 }
     
 a:hover {
@@ -72,6 +76,18 @@ h1 a{
     border-right: 1px solid #ccc;
 }
 
+@media (max-width: 768px){
+        .logoHeaderContainer{
+        padding-right: 15px;
+        border-right: 1px solid #ccc;
+        margin-left: 0px !important;
+    }
+    
+    header{
+        min-height: 40px !important;
+    }
+}
+
 .nav li a{
     font-family: "Raleway", Helvetica, sans-serif;
     font-variant: small-caps;
@@ -94,6 +110,35 @@ h1 a{
 
 .headerBg{
     background-color: rgb(255, 255, 255);
+}
+
+.wrapper{
+    padding: 45px;
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+    z-index: 100000;
+    top: 0px;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    position: static;
+    min-height: 63px;
+}
+.introSection{
+    text-align: center;
+        margin: 0 0 3em 0;
+}
+
+.introSection img{
+    width: 95px;
 }
 
 
